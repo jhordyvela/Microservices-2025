@@ -24,6 +24,7 @@ public class VentaServiceImpl implements VentaService{
         return ventaRepository.save(venta);
     }
 
+
     @Override
     public Venta readById(Long id) {
         Optional<Venta> result = ventaRepository.findById(id);

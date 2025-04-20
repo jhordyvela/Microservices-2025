@@ -12,7 +12,6 @@ import upeu.edu.pe.colportores_crud.services.VentaService;
 import java.net.URI;
 import java.util.List;
 
-
 @RestController
 @RequestMapping(path = "ventas")
 @Tag(name = "ventas resource")

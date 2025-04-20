@@ -30,7 +30,10 @@ public class VentaServiceImpl implements VentaService{
         return result.orElse(null);
     }
 
+
+
     @Override
+
     public List<Venta> readAll() {
         return ventaRepository.findAll();
     }

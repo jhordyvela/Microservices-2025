@@ -19,6 +19,7 @@ public class VentaController {
     private final VentaService ventaService;
     private final Logger log = (Logger) LoggerFactory.getLogger(VentaController.class);
 
+    //
     public VentaController(VentaService ventaService) {
         this.ventaService = ventaService;
     }

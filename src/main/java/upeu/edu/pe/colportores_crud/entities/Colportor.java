@@ -55,7 +55,6 @@ public class Colportor {
 
     @Override
     public String toString() {
-        return "colportor{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +

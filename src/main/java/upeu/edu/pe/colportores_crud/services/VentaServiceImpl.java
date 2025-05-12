@@ -15,14 +15,10 @@ public class VentaServiceImpl implements VentaService{
 
 
     /// afdasdas///
-    public VentaServiceImpl(VentaRepository ventaRepository) {
-        this.ventaRepository = ventaRepository;
-    }
 
     @Override
     public Venta create(Venta venta) {
-        return ventaRepository.save(venta);
-    }
+        }
 
 
     @Override
@@ -34,11 +30,8 @@ public class VentaServiceImpl implements VentaService{
 
 
     @Override
-
     public List<Venta> readAll() {
-        return ventaRepository.findAll();
     }
-
     @Override
     public Venta update(Long id, Venta venta) {
         if (ventaRepository.existsById(id)){
@@ -50,11 +43,7 @@ public class VentaServiceImpl implements VentaService{
 
     @Override
     public void delete(Long id) {
-        ventaRepository.deleteById(id);
-
-    }
-//cambie en el repository el colportor por venta//
-
+        //cambie en el repository el colportor por venta//
 
 
 }

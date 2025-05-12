@@ -10,7 +10,6 @@ public class Venta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private LocalDate fecha;
     @ManyToOne
     private Colportor colportor;
     @OneToMany(mappedBy = "venta", cascade = CascadeType.ALL)
@@ -24,11 +23,9 @@ public class Venta {
         this.id = id;
     }
 
-    public LocalDate getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
 
@@ -48,13 +45,5 @@ public class Venta {
         this.detalles = detalles;
     }
 
-    @Override
-    public String toString() {
-        return "Venta{" +
-                "id=" + id +
-                ", fecha=" + fecha +
-                ", colportor=" + colportor +
-                ", detalles=" + detalles +
-                '}';
     }
 }

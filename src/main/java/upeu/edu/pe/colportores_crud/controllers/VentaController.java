@@ -47,12 +47,8 @@ public class VentaController {
         log.info("PUT: venta {}", id);
         return ResponseEntity.ok(this.ventaService.update(id, venta));
     }
-    @Operation(summary = "Eliminar un venta dado su ID")
     @DeleteMapping(path = "{id}")
-    public ResponseEntity<?> delete(@PathVariable Long id) {
-        log.info("DELETE: venta id={}", id);
         this.ventaService.delete(id);
-        return ResponseEntity.noContent().build();
     }
     @Operation(summary = "Listar todas las ventas")
     @GetMapping
